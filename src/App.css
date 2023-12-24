@@ -1,0 +1,68 @@
+.container {
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0% -30%;
+  background-color: var(--Light-pink);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 540px;
+  background-color: var(--White);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 1rem var(--Dark-purple);
+}
+
+.card .title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 0.5rem;
+}
+
+.card .icon-star {
+  width: 35px;
+}
+
+.card .title-text {
+  font-size: 2.5rem;
+}
+
+.card .item {
+  padding-block: 0.5rem;
+}
+
+.card div:nth-child(n + 3) {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.card .display-answer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.display-answer .question {
+  font-weight: 600;
+}
+
+.card .answer {
+  padding-block: 0.5rem;
+  color: var(--Grayish-purple);
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin: 2rem 0.5rem;
+  }
+  .card .item {
+    padding-block: 1rem;
+  }
+}

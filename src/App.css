@@ -66,6 +66,10 @@
 
 @media (max-width: 576px) {
   .card .item {
-    padding-block: 1rem;
+    padding-block: 1.5rem;
+  }
+
+  .card .display-answer {
+    gap: 1rem;
   }
 }

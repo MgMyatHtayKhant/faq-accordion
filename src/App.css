@@ -43,11 +43,15 @@
 }
 
 .card .display-answer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   user-select: none;
   cursor: pointer;
+  background-color: var(--White);
+  border: none;
+  font-size: 1rem;
 }
 
 .display-answer .question {
@@ -56,6 +60,7 @@
 
 .card .answer {
   padding-block: 1rem 0.5rem;
+  line-height: 1.5rem;
   color: var(--Grayish-purple);
 }
 

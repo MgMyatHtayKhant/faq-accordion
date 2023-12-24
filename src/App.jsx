@@ -25,10 +25,10 @@ function App() {
         {
           items.map(item => (
             <div key={item.id} className="item">
-              <div onClick={() => handleChange(item.id)}  className="display-answer">
+              <button  aria-expanded={item.on} onClick={() => handleChange(item.id)}  className="display-answer">
                 <p className="question">{item.question}</p>
                 <img src={item.on ? minusIcon : plusIcon} alt="Icon" className="icon" />
-              </div>
+              </button>
               <p className="answer" style={item.on ? null : {display: "none"} }>
                 {item.answer}
               </p>

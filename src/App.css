@@ -1,7 +1,7 @@
 .container {
   background-image: url("assets/images/background-pattern-desktop.svg");
   background-repeat: no-repeat;
-  background-position: 0% -30%;
+  background-position: 0% -20%;
   background-color: var(--Light-pink);
   min-height: 100vh;
   display: flex;
@@ -16,6 +16,7 @@
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 0 1rem var(--Dark-purple);
+  margin: 2rem 0.5rem;
 }
 
 .card .title {
@@ -34,7 +35,7 @@
 }
 
 .card .item {
-  padding-block: 0.5rem;
+  padding-block: 1rem;
 }
 
 .card div:nth-child(n + 3) {
@@ -54,14 +55,11 @@
 }
 
 .card .answer {
-  padding-block: 0.5rem;
+  padding-block: 1rem 0.5rem;
   color: var(--Grayish-purple);
 }
 
 @media (max-width: 576px) {
-  .card {
-    margin: 2rem 0.5rem;
-  }
   .card .item {
     padding-block: 1rem;
   }

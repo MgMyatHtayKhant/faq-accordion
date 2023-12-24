@@ -19,17 +19,17 @@ function App() {
     <main className='container'>
       <div className="card">
         <div className="title">
-          <img src={starIcon} alt="Star icon" className="icon-star" />
+          <img src={starIcon} alt="" className="icon-star" />
           <h1 className="title-text">FAQs</h1>
         </div>
         {
           items.map(item => (
             <div key={item.id} className="item">
-              <button  aria-expanded={item.on} onClick={() => handleChange(item.id)}  className="display-answer">
+              <button aria-controls={item.id}  aria-expanded={item.on} onClick={() => handleChange(item.id)}  className="display-answer">
                 <p className="question">{item.question}</p>
-                <img src={item.on ? minusIcon : plusIcon} alt="Icon" className="icon" />
+                <img src={item.on ? minusIcon : plusIcon} alt="" className="icon" />
               </button>
-              <p className="answer" style={item.on ? null : {display: "none"} }>
+              <p id={item.id} className="answer" style={item.on ? null : {display: "none"} }>
                 {item.answer}
               </p>
             </div>
